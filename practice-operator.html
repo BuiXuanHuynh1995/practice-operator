@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Luyện tập với toán tử</title>
+</head>
+<body>
+<!-- Bài 1-->
+<script>
+    let nb1 = parseInt(prompt("Please enter nb1", ""));
+    let nb2 = parseInt(prompt("Please enter nb2", ""));
+    let nb3 = nb1 + nb2;
+    /* Sử dụng lệnh if..else*/
+    /*if(nb3<4){
+        alert('Below')
+    } else {
+        alert('Over')
+    }*/
+    /*Sử dụng toán tử 3 ngôi*/
+    document.write((nb3 < 4) ? "Below" : "Over");
+</script>
+
+
+
+<!--Bài 2-->
+<!--Sử dụng switch-case-->
+<script>
+    let message = prompt("Please enter message");
+    switch (message) {
+        case 'Employee':
+            alert("Hello");
+            break;
+        case 'Director':
+            alert("Greeting");
+            break;
+        case "":
+            alert("No login");
+            break;
+        default:
+            alert("");
+            break;
+    }
+</script>
+
+/* sử dụng toán tử 3 ngôi*/
+<script>
+    let message = prompt("please enter message")
+    alert((message == 'Employee') ?
+        'Hello' :
+        (message == 'Director') ?
+            'Greetings' :
+            (message == '') ?
+                'No login' :
+                '');
+</script>
+</body>
+</html>
